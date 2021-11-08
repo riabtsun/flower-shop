@@ -1,0 +1,44 @@
+.to-shop {
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	background-color: #f3f4f6;
+	background-repeat: no-repeat;
+	background-position: center;
+	align-items: center;
+	justify-content: space-between;
+	@media screen and(min-width:768px) {
+		background-position: right;
+		justify-content: center;
+		align-items: flex-start;
+		padding-left: 96px;
+	}
+	&-title {
+		max-width: 585px;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		color: #2c1500;
+		@media screen and(min-width:768px) {
+			font-size: 40px;
+			line-height: 56px;
+		}
+	}
+	&-link {
+		padding: 10px 42px;
+		background-color: #156963;
+		display: inline-block;
+		text-decoration: none;
+		color: #fafefe;
+		font-family: 'Nunito';
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: center;
+    transition: .3s;
+		&:hover {
+			background-color: #fafefe;
+			color: #156963;
+		}
+	}
+}

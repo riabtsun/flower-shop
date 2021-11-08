@@ -1,0 +1,30 @@
+@import './styles/header';
+@import './styles/advantages';
+@import './styles/products';
+@import './styles/about';
+@import './styles/shop';
+@import './styles/footer';
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat';
+}
+.container {
+	max-width: 1168px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media screen and(min-width: 768px) {
+		padding: 0 56px;
+	}
+	@media screen and(min-width: 1200px) {
+		max-width: 1280px;
+	}
+}
+a:hover {
+	text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
